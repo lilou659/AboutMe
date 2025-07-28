@@ -7,13 +7,14 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-gradient: linear-gradient(135deg, #181e31 0%, #321f42 100%);
-      --container-bg: rgba(255,255,255,0.07);
+      --bg-gradient: linear-gradient(135deg, #120923 0%, #23112d 100%);
+      --container-bg: rgba(35, 17, 45, 0.89);
       --accent-purple: #a76cff;
       --accent-pink: #ff70a6;
-      --text-primary: #f3f0fa;
+      --text-primary: #f8e8ff;
       --text-secondary: #c5b3e6;
       --section-gap: 44px;
+      --black: #0a0613;
     }
     html, body {
       min-height: 100vh;
@@ -39,7 +40,7 @@
       padding: 40px 6vw 44px 6vw;
       background: var(--container-bg);
       border-radius: 18px;
-      box-shadow: 0 8px 40px 0 rgba(167, 108, 255, 0.08);
+      box-shadow: 0 8px 40px 0 rgba(167, 108, 255, 0.13);
       backdrop-filter: blur(2px);
     }
     .simple-title {
@@ -52,35 +53,27 @@
       font-size: 3.6rem;
       color: var(--accent-purple);
       font-family: 'Montserrat', Arial, sans-serif;
-      font-weight: 300;
+      font-weight: 700;
       letter-spacing: 2px;
-      margin-bottom: 0.1em;
+      margin-bottom: 0.15em;
       text-align: center;
+      text-shadow: 0 3px 8px #0a0613cc;
     }
     .ambitious-line {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       color: var(--accent-pink);
       font-style: italic;
-      font-weight: 400;
+      font-weight: 300;
       margin-bottom: 0.5em;
-      letter-spacing: 1.5px;
+      letter-spacing: 1px;
       text-align: center;
+      margin-top: -0.7em;
     }
     .info-row {
       font-size: 1.12rem;
       color: var(--text-secondary);
       text-align: center;
       margin-bottom: 0.4em;
-    }
-    .lang {
-      font-style: italic;
-      color: var(--accent-purple);
-      font-size: 1.11em;
-      font-weight: 600;
-      margin-left: 3px;
-      letter-spacing: 0.5px;
-      display: block;
-      margin-bottom: 0.3em;
     }
     h2 {
       color: var(--accent-pink);
@@ -122,13 +115,14 @@
       align-items: center;
       font-size: 1.05rem;
       color: var(--accent-pink);
-      background: rgba(22,18,38,0.95);
+      background: #120923e6;
       border-radius: 0 0 18px 18px;
       width: 100%;
       padding: 18px 0;
       letter-spacing: 0.06em;
       font-weight: 600;
       border-top: 1.5px solid var(--accent-purple);
+      box-shadow: 0 3px 24px 0 #0a0613cc;
     }
     @media (max-width: 800px) {
       .resume-content {
@@ -138,7 +132,7 @@
         font-size: 2.1rem;
       }
       .ambitious-line {
-        font-size: 1.08rem;
+        font-size: 0.93rem;
       }
       .info-row {
         font-size: 1rem;
@@ -152,7 +146,7 @@
         font-size: 1.2rem;
       }
       .ambitious-line {
-        font-size: 0.95rem;
+        font-size: 0.7rem;
       }
       .info-row {
         font-size: 0.93rem;
@@ -168,13 +162,12 @@
         <div class="ambitious-line">
           Ambitious Driven Creative
         </div>
-        <span class="lang">Fluent in English &amp; French</span>
       </div>
 
       <div class="section">
         <h2>Personal Statement</h2>
         <p>
-          In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or building something from scratch, I approach every challenge with curiosity and resolve. <b>Bilingual and resourceful</b>, I thrive on turning ideas into action and helping my community grow.
+          In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or building a house from the ground up, I thrive on challenge, creativity, and making a real difference.
         </p>
       </div>
 
