@@ -58,19 +58,31 @@
       text-align: center;
       padding: 0;
     }
-    .simple-bar {
-      width: 100%;
-      max-width: 430px;
-      background: #1e0c26;
-      color: var(--text-secondary);
-      border-radius: 10px;
-      padding: 0.7em 1.2em;
+    .subtitle-no-box {
+      font-size: 1.2rem;
+      color: var(--accent-pink);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 0.7em;
       text-align: center;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .info-row {
       font-size: 1.08rem;
-      font-weight: 500;
-      border: 1.5px solid var(--accent-pink);
-      margin-bottom: 0.5em;
-      box-shadow: 0 2px 12px 0 rgba(230,127,255,0.05);
+      color: var(--text-secondary);
+      text-align: center;
+      margin-bottom: 0.4em;
+    }
+    .lang {
+      font-style: italic;
+      color: var(--accent-pink);
+      font-size: 1.01em;
+      margin-left: 3px;
+    }
+    .simple-bar {
+      display: none; /* Hide the old bar */
     }
     .subtitle {
       display: none;
@@ -108,12 +120,6 @@
       color: var(--accent-purple);
       font-weight: 700;
     }
-    .lang {
-      font-style: italic;
-      color: var(--accent-pink);
-      font-size: 1.01em;
-      margin-left: 3px;
-    }
     .email-bar {
       margin-top: 32px;
       display: flex;
@@ -136,8 +142,11 @@
       .simple-title h1 {
         font-size: 1.4rem;
       }
-      .simple-bar {
-        font-size: 0.99rem;
+      .subtitle-no-box {
+        font-size: 1rem;
+      }
+      .info-row {
+        font-size: 1rem;
       }
     }
     @media (max-width: 650px) {
@@ -147,7 +156,10 @@
       .simple-title h1 {
         font-size: 1.05rem;
       }
-      .simple-bar {
+      .subtitle-no-box {
+        font-size: 0.92rem;
+      }
+      .info-row {
         font-size: 0.93rem;
       }
     }
@@ -158,15 +170,21 @@
     <div class="resume-content">
       <div class="simple-title">
         <h1>Lilou Lefebvre</h1>
-        <div class="simple-bar">
-          Ambitious, driven, and creative • Yukon, Canada <span class="lang">• Fluent in English &amp; French</span>
+        <div class="subtitle-no-box">
+          Ambitious Driven Creative
+        </div>
+        <div class="info-row">
+          Yukon, Canada
+        </div>
+        <div class="info-row">
+          <span class="lang">Fluent in English &amp; French</span>
         </div>
       </div>
 
       <div class="section">
         <h2>Personal Statement</h2>
         <p>
-          In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or building a house with my own hands, I’m committed to breaking barriers and inspiring others to do the same.
+          In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or building a house with my family, I bring creativity and drive to every challenge. My journey is defined by curiosity, resilience, and the belief that impact is possible anywhere.
         </p>
       </div>
 
