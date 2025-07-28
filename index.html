@@ -3,109 +3,210 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lilou Lefebvre | Portfolio</title>
+  <title>Lilou Lefebvre | About Me</title>
   <style>
     body {
-      background-color: #0d0d0d;
-      color: #f2f2f2;
-      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #2e003e 0%, #8559a5 100%);
+      color: #f7f3fa;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      letter-spacing: 0.01em;
+    }
+    header {
+      background: linear-gradient(90deg, #4f1c69 0%, #9d5fe9 100%);
+      padding: 36px 0 24px 0;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(70, 0, 80, 0.2);
+    }
+    h1 {
+      font-size: 2.7em;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      letter-spacing: 0.04em;
+      background: linear-gradient(90deg, #ffe0fa 40%, #b97cff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      color: #ffe0fa;
+      font-size: 1.4em;
+      margin-top: 36px;
+      border-bottom: 2px solid #b97cff;
+      padding-bottom: 4px;
+      letter-spacing: 0.02em;
+    }
+    h3 {
+      color: #b97cff;
+      font-size: 1.1em;
+      margin: 24px 0 10px 0;
+    }
+    section {
+      background: rgba(30, 0, 40, 0.6);
+      margin: 28px auto;
+      padding: 28px 22px 22px 22px;
+      max-width: 850px;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(56, 0, 66, 0.17);
+    }
+    ul, li {
       margin: 0;
       padding: 0;
     }
-    header {
-      background-color: #2e003e;
-      padding: 20px;
-      text-align: center;
-    }
-    h1, h2, h3 {
-      color: #e0aaff;
-    }
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .contact {
-      background-color: #1a1a1a;
-      padding: 15px;
-      text-align: center;
-      color: #ccc;
-    }
     ul {
-      list-style-type: square;
-      padding-left: 20px;
+      margin-left: 22px;
+      margin-bottom: 10px;
+    }
+    li {
+      margin-bottom: 8px;
+      font-size: 1em;
     }
     .highlight {
-      color: #ffb3ff;
+      color: #ffe0fa;
+      background: linear-gradient(90deg, #b97cff 60%, #ffb3ff 100%);
+      border-radius: 7px;
+      padding: 2px 7px;
+      font-weight: 600;
+    }
+    .twocolumns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .column {
+      flex: 1 1 330px;
+      min-width: 270px;
+    }
+    .contact {
+      background: linear-gradient(90deg, #9d5fe9 40%, #4f1c69 100%);
+      color: #fff0fa;
+      padding: 18px 0;
+      border-radius: 0 0 18px 18px;
+      text-align: center;
+      font-size: 1.08em;
+      margin-top: -18px;
+      box-shadow: 0 4px 16px rgba(56, 0, 66, 0.09);
     }
     a {
-      color: #ffb3ff;
-      text-decoration: none;
+      color: #ffd6fa;
+      text-decoration: underline;
+      transition: color 0.2s;
     }
     a:hover {
-      text-decoration: underline;
+      color: #ffe0fa;
+    }
+    @media (max-width: 700px) {
+      .twocolumns { flex-direction: column; gap: 0; }
+      section { padding: 18px 6vw; }
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Lilou Lefebvre</h1>
-    <p>Building solutions that matter.</p>
+    <div>Yukon, Canada &mdash; Building solutions that matter</div>
   </header>
 
   <section>
-    <h2>About Me</h2>
-    <p>In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or launching health access initiatives in remote areas—I’m passionate about building solutions that matter.</p>
-    <p>I found love in two completely different worlds: coding and volleyball. I’m ambitious, driven by curiosity, and always seeking new ways to grow, despite the challenges of living in a small community. I bring curiosity, resilience, discipline, advocacy, and ambition all while craving to learn more.</p>
+    <h2>Personal Statement</h2>
+    <p>
+      In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or launching health access initiatives in remote areas—I’m passionate about building solutions that matter. I bring curiosity, resilience, discipline, advocacy, and ambition, all while craving to learn more. My journey is driven not by privilege but by persistence, and I aim to build technologies and communities that elevate others with me.
+    </p>
+  </section>
+
+  <section class="twocolumns">
+    <div class="column">
+      <h2>Technical Skills & Projects</h2>
+      <ul>
+        <li><span class="highlight">Artificial Intelligence & Health Tech</span>
+          <ul>
+            <li>Developed AI using dermascopic image analysis to identify skin cancer</li>
+            <li>Neural networks, model training, data labeling, image classification</li>
+          </ul>
+        </li>
+        <li><span class="highlight">Environmental Science & Advocacy</span>
+          <ul>
+            <li>Discovered lead contamination in local soil and drinking water</li>
+            <li>Petitioned for government-wide infrastructure inspections across Yukon schools</li>
+          </ul>
+        </li>
+        <li><span class="highlight">App Development & CS Fundamentals</span>
+          <ul>
+            <li>Specialized in app logic and user-first design</li>
+            <li>Currently completing CS50: Harvard's Introduction to Computer Science</li>
+          </ul>
+        </li>
+        <li><span class="highlight">Other Technical</span>
+          <ul>
+            <li>Computer vision, AI/ML pipeline development</li>
+            <li>Small engine repair and mechanics</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="column">
+      <h2>Awards & Recognition</h2>
+      <ul>
+        <li><span class="highlight">Canada-Wide Science Fair Medalist</span> — Silver (2024), Bronze (2025)</li>
+        <li><span class="highlight">Outstanding Yukoner Award</span> (2024)</li>
+        <li><span class="highlight">Ingenious+ National Finalist</span> (2025)</li>
+        <li><span class="highlight">Yukon Ministers Recognition Sports Award</span> (2024)</li>
+        <li><span class="highlight">Athlete of the Year</span> — Del Van Gorder School (2024)</li>
+        <li><span class="highlight">Senior Volleyball MVP</span> (2024–2025)</li>
+        <li><span class="highlight">Certificate of Excellence in Senior Writing</span> (2024–2025)</li>
+        <li><span class="highlight">MV Territorial Junior Ranger</span> (2023)</li>
+      </ul>
+    </div>
   </section>
 
   <section>
-    <h2>Awards & Recognition</h2>
+    <h2>Coursework & Training</h2>
     <ul>
-      <li><span class="highlight">Canada-Wide Science Fair Medalist</span> — Silver (2024), Bronze (2025)</li>
-      <li><span class="highlight">Outstanding Yukoner Award</span> (2024)</li>
-      <li><span class="highlight">Ingenious+ National Finalist</span> (2025)</li>
-      <li><span class="highlight">Yukon Ministers Recognition Sports Award</span> (2024)</li>
-      <li><span class="highlight">Athlete of the Year</span> — Del Van Gorder School (2024)</li>
-      <li><span class="highlight">Senior Volleyball MVP</span> (2024–2025)</li>
-      <li><span class="highlight">Certificate of Excellence in Senior Writing</span> (2024–2025)</li>
-      <li><span class="highlight">MV Territorial Junior Ranger</span> (2023)</li>
+      <li>Small Engine Repair & Mechanics</li>
+      <li>CS50: Introduction to Computer Science (In Progress)</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Technical Skills & Projects</h2>
-    <ul>
-      <li><strong>Artificial Intelligence & Health Tech:</strong> Developed AI using dermascopic image analysis to identify skin cancer (Neural networks, model training, data labeling, image classification).</li>
-      <li><strong>Environmental Science & Advocacy:</strong> Discovered lead contamination in local soil and water; petitioned for government-wide school inspections.</li>
-      <li><strong>App Development & CS Fundamentals:</strong> Specialized in app logic and user-first design.</li>
-      <li><strong>Computer vision and AI/ML pipeline developer, AI/ML architech desighn.</li>
-      <li><strong>Currently completing CS50: Harvard's Introduction to Computer Science.</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Creative & Community Work</h2>
-    <ul>
-      <li>Writing a debut novel exploring youth resilience and identity.</li>
-      <li>Built family home — hands-on construction experience with tools and engineering thinking.</li>
-      <li>Health equity advocate — focused on improving rural health access.</li>
-      <li>Organized events like Family Math Night, Kids’ Summer Lit Program, youth trips, fundraisers, and town-wide cleanups.</li>
-    </ul>
+  <section class="twocolumns">
+    <div class="column">
+      <h2>Creative Endeavors</h2>
+      <ul>
+        <li>Writing debut novel exploring youth resilience and identity</li>
+        <li>Family home builder &mdash; hands-on experience with construction, tools, problem-solving</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>Community Leadership</h2>
+      <ul>
+        <li><span class="highlight">Health Equity Advocate</span> — spearheading efforts to improve specialized health care access in rural communities</li>
+        <li><span class="highlight">Event Organizer & Volunteer Leader</span>:
+          <ul>
+            <li>Family Math Game Night (ages 6+)</li>
+            <li>Kids’ Summer Literature Program (ages 6–12)</li>
+            <li>Grad Fundraising Committee (2024)</li>
+            <li>Youth Group Trips & Planning (2024–2025)</li>
+            <li>Town-wide Trash Cleanups (2023–2025)</li>
+            <li>Organizer of multiple community gatherings</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section>
     <h2>Athletics</h2>
     <ul>
-      <li><strong>Volleyball:</strong> National Gold Medalist (2024 & 2025), Provincial Silver Medalist (2024).</li>
-      <li>Known for discipline, teamwork, and leadership under pressure.</li>
+      <li><span class="highlight">Volleyball</span>: National Gold Medalist (2024 &amp; 2025), Provincial Silver Medalist (2024)</li>
+      <li>Senior Volleyball MVP (2024–2025)</li>
+      <li>Known for discipline, teamwork, and leadership under pressure</li>
     </ul>
   </section>
 
-  <section class="contact">
-    <p>Contact Me:</p>
-    <p>Email: <a href="mailto:liloubutterfly@outlook.com">liloubutterfly@outlook.com</a></p>
-    <p>Phone: 867-333-1185</p>
-  </section>
+  <div class="contact">
+    <strong>Contact Me:</strong><br>
+    Email: <a href="mailto:liloubutterfly@outlook.com">liloubutterfly@outlook.com</a> &nbsp;|&nbsp;
+    Phone: 867-333-1185
+  </div>
 </body>
 </html>
