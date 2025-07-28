@@ -7,18 +7,17 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg-black: #0d0a13;
-      --bg-purple: #290546;
-      --accent-purple: #b266ff;
-      --text-primary: #f4eeff;
-      --text-secondary: #c7b6e0;
+      --bg-black: #09070d;
+      --accent-purple: #e67fff;
+      --accent-pink: #ff4fcf;
+      --text-primary: #fff0fa;
+      --text-secondary: #c38fd6;
+      --container-bg: rgba(34, 12, 44, 0.96);
       --section-gap: 44px;
     }
-
     html, body {
-      width: 100vw;
       min-height: 100vh;
-      background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-purple) 100%);
+      background: var(--bg-black);
       color: var(--text-primary);
       font-family: 'Montserrat', Arial, sans-serif;
       margin: 0;
@@ -26,138 +25,130 @@
       box-sizing: border-box;
       line-height: 1.7;
     }
-
     .container {
-      width: 100vw;
-      max-width: unset;
-      margin: 0;
-      padding: 0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
     }
-
     .resume-content {
       width: 100%;
       max-width: 800px;
       margin: 48px 0 32px 0;
       padding: 36px 6vw 40px 6vw;
-      background: rgba(25, 10, 35, 0.97);
+      background: var(--container-bg);
       border-radius: 18px;
-      box-shadow: 0 8px 40px 0 rgba(153, 85, 255, 0.12);
+      box-shadow: 0 8px 40px 0 rgba(230, 127, 255, 0.08);
     }
-
-    h1, h2 {
-      font-weight: 700;
+    .simple-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2.2em;
+    }
+    .simple-title h1 {
+      font-size: 2.2rem;
+      color: var(--accent-purple);
+      background: none;
+      margin-bottom: 0.3em;
       letter-spacing: 1px;
-      margin-top: 0;
-    }
-
-    h1 {
-      font-size: 2.6rem;
-      color: var(--accent-purple);
-      margin-bottom: 0.23em;
+      font-weight: 700;
+      border: none;
       text-align: center;
-      width: 100%;
+      padding: 0;
     }
-
-    .subtitle {
-      font-size: 1.2rem;
+    .simple-bar {
+      width: 100%;
+      max-width: 430px;
+      background: #1e0c26;
       color: var(--text-secondary);
-      margin-bottom: 1.4em;
-      font-weight: 600;
+      border-radius: 10px;
+      padding: 0.7em 1.2em;
       text-align: center;
-      background: linear-gradient(90deg, #b266ff22, #0d0a13 70%);
-      border-radius: 8px;
-      padding: 0.4em 0;
-      width: 100%;
-      display: block;
-      letter-spacing: 0.06em;
+      font-size: 1.08rem;
+      font-weight: 500;
+      border: 1.5px solid var(--accent-pink);
+      margin-bottom: 0.5em;
+      box-shadow: 0 2px 12px 0 rgba(230,127,255,0.05);
     }
-
+    .subtitle {
+      display: none;
+    }
     h2 {
-      color: var(--accent-purple);
+      color: var(--accent-pink);
       font-size: 1.18rem;
       margin-bottom: 1.1em;
       text-transform: uppercase;
       border-left: 4px solid var(--accent-purple);
       padding-left: 12px;
       margin-top: var(--section-gap);
+      font-weight: 700;
+      letter-spacing: 1px;
     }
-
     ul {
       margin: 0 0 1.3em 1.5em;
       padding: 0;
     }
-
     li {
       margin-bottom: 0.5em;
     }
-
     .section {
       margin-bottom: var(--section-gap);
     }
-
     .flex-list {
       display: flex;
       flex-wrap: wrap;
       gap: 24px 40px;
     }
-
     .flex-list > div {
       flex: 1 1 240px;
     }
-
-    .awards-list li {
-      margin-bottom: 0.2em;
-    }
-
     .highlight {
       color: var(--accent-purple);
       font-weight: 700;
     }
-
     .lang {
       font-style: italic;
-      color: var(--text-secondary);
-      font-size: 1.03em;
+      color: var(--accent-pink);
+      font-size: 1.01em;
       margin-left: 3px;
     }
-
     .email-bar {
       margin-top: 32px;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 1.05rem;
-      color: var(--accent-purple);
-      background: #190c2d;
+      color: var(--accent-pink);
+      background: #1e0c26;
       border-radius: 0 0 18px 18px;
       width: 100%;
       padding: 18px 0;
       letter-spacing: 0.06em;
       font-weight: 600;
+      border-top: 1.5px solid var(--accent-purple);
     }
-
     @media (max-width: 800px) {
       .resume-content {
         padding: 20px 3vw 32px 3vw;
       }
-      h1 {
-        font-size: 1.55rem;
+      .simple-title h1 {
+        font-size: 1.4rem;
+      }
+      .simple-bar {
+        font-size: 0.99rem;
       }
     }
     @media (max-width: 650px) {
       .resume-content {
         padding: 8px 1vw 22px 1vw;
       }
-      h1 {
-        font-size: 1.2rem;
+      .simple-title h1 {
+        font-size: 1.05rem;
       }
-      .subtitle {
-        font-size: 1.08rem;
+      .simple-bar {
+        font-size: 0.93rem;
       }
     }
   </style>
@@ -165,16 +156,17 @@
 <body>
   <div class="container">
     <div class="resume-content">
-      <h1>Lilou Lefebvre</h1>
-      <div class="subtitle">
-        Ambitious, driven, and creative &nbsp;|&nbsp; Yukon, Canada &nbsp;|&nbsp;
-        <span class="lang">Fluent in English &amp; French</span>
+      <div class="simple-title">
+        <h1>Lilou Lefebvre</h1>
+        <div class="simple-bar">
+          Ambitious, driven, and creative • Yukon, Canada <span class="lang">• Fluent in English &amp; French</span>
+        </div>
       </div>
 
       <div class="section">
         <h2>Personal Statement</h2>
         <p>
-          In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or launching health access initiatives in remote areas—I’m passionate about building solutions that matter. I bring curiosity, resilience, discipline, advocacy, and ambition all while craving to learn more. My journey is driven not by privilege but by persistence, and I aim to build technologies and communities that elevate others with me.
+          In a northern town of just 400 people, I’ve learned that limits only exist if you let them. Whether it’s solving environmental crises through science, leading teams to national championships, or building a house with my own hands, I’m committed to breaking barriers and inspiring others to do the same.
         </p>
       </div>
 
